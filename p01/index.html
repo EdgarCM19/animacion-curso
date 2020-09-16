@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Practica 01 con WebGL</title>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<!-- <script src="./hexagono.js"></script> -->
+		<!-- <script src="./hexagono_strip.js"></script> -->
+		<!-- <script src="./hexagono_fan.js"></script> -->
+		<!-- <script src="./estrella.js"></script> -->
+		<!-- <script src="./estrella_strip.js"></script> -->
+		<!-- <script src="./estrella_fan.js"></script> -->
+		<script src="./figura.js"></script>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				font-family: 'Raleway', sans-serif;
+			}
+			body {
+				background: #ece4ce;
+				color: #464445;
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.info-container {
+				margin: 10px 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+		</style>
+	</head>
+	<body onload="onLoad();">
+		<div class="info-container">
+			<h1>Practica 01 con WebGL</h1>
+			<h3>Edgar Castro Martinez</h3>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h4 id="nombre"></h4>
+			<br>
+			<h4 id="modo"></h4>
+			<br>
+			<h4 id="nvert"></h4>
+		</div>
+		<canvas id="webglcanvas" style="border: none" width="500" height="500"></canvas>
+	</body>
+</html>
