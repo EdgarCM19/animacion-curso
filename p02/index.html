@@ -4,75 +4,17 @@
 		<meta charset="UTF-8"/>
 		<title>Prueba ThreeJs</title>
 		<style>
-			* {
+			body {
+				width: 100vw;
+				height: 100vh;
 				margin: 0;
 				padding: 0;
 			}
-			canvas { width: 100%; height: 100% }
+			canvas { width: 100vw; height: 100vh; }
 		</style>
 	</head>
-
 	<body>
 		<script src="./node_modules/three/build/three.min.js"></script>
 		<script src="./index.js"></script>
-		<!-- <script src="./node_modules/three/build/three.min.js"></script>
-		<script>
-			// Se crea el objeto de la escena
-			var scene = new THREE.Scene();
-
-			// Se crea la cámara de tipo perspectiva, la cual recibe los siguientes parámetros:
-			/*		
-					fov — Camera frustum vertical field of view.
-					aspect — Camera frustum aspect ratio.
-					near — Camera frustum near plane.
-					far — Camera frustum far plane.
-			*/
-			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 500 );
-
-			// Se crea el objeto de renderizado
-			var renderer = new THREE.WebGLRenderer();
-			// Se configura el tamaño del render
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			// Se configura el color de fondo 
-			renderer.setClearColor( 0x00ffff, 1 );
-			// Se agrega el objeto renderer al contenedor como un elemento DOM hijo
-			document.body.appendChild( renderer.domElement );
-
-			// Se crea una luz direccional para mostrar el objeto
-			var light = new THREE.DirectionalLight( 0xffffff, 1.5);
-			light.position.set(0, 0, 1);
-			scene.add( light );
-
-			// Se crea el objeto de la geometría correspondiente a un cubo de lado 1
-			var geometry = new THREE.BoxGeometry(1.0, 1.0, 1.0); // ó //new THREE.BoxGeometry(1.0);
-			
-			// Se crea el objeto del manterial (color verde)
-			var material = new THREE.MeshPhongMaterial( { color: 0xecec00 } );
-			/*var material = new THREE.MeshPhongMaterial( {
-					color: 0x156289,
-					emissive: 0x072534,
-					side: THREE.DoubleSide,
-					flatShading: true
-				} );*/
-
-			// Se crea el objeto para la malla con la geometría y el material correspondiente
-			var cube = new THREE.Mesh( geometry, material );
-			// Se agrega la malla a la escena
-			scene.add( cube );
-
-			// Se establece la posición de la cámara
-			camera.position.z = 5;
-
-			animate();
-
-			function animate () {
-				requestAnimationFrame( animate );
-
-				cube.rotation.x += 0.02;
-				cube.rotation.y += 0.01;
-
-				renderer.render(scene, camera);
-			}
-		</script> -->
 	</body>
 </html>
